@@ -1,7 +1,7 @@
 import "./App.css";
+import PersonalInformationContainer from "./Container/PersonalInformationContainer";
 import Footer from "./components/Footer/Footer";
 import Nav from "./components/Nav/Nav";
-import PersonalInformation from "./components/PersonalInformation/PersonalInformation";
 import PremiumAccount from "./components/PremiumAccount/PremiumAccount";
 
 function App() {
@@ -10,7 +10,7 @@ function App() {
       <Nav />
       <div className="App-content">
         <PremiumAccount />
-        <PersonalInformation />
+        <PersonalInformationContainer />
         <Footer />
       </div>
     </div>
