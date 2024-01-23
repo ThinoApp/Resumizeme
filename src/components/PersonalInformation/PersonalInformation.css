@@ -1,0 +1,81 @@
+.PersonalInformation {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  h2 {
+    font-family: Gilroy-SemiBold;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  .PersonalInformation-info {
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    gap: 16px;
+    form {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-auto-flow: row;
+      gap: 12px;
+      .adress {
+        grid-column-start: 1;
+        grid-column-end: 3;
+      }
+
+      .useToLog {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        font-family: Gilroy-Medium;
+        font-size: 15px;
+        line-height: 22px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: rgba(76, 76, 85, 1);
+        span {
+          color: rgba(22, 136, 254, 1);
+        }
+      }
+      .btn-submit-container {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        button {
+          border-radius: 4px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 170px;
+          height: 40px;
+          background-color: rgba(22, 136, 254, 1);
+          font-family: Gilroy-SemiBold;
+          font-size: 15px;
+          line-height: 22px;
+          letter-spacing: 0em;
+          text-align: left;
+          border: none;
+          color: rgba(255, 255, 255, 1);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 748px) {
+  .PersonalInformation {
+    .PersonalInformation-info {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+
+      form {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        .form-control {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
